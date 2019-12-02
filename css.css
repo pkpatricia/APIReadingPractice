@@ -1,0 +1,12 @@
+body {
+  margin: 0 auto;
+  background-color:lightblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: fuchsia;
+}
+
+div {
+  margin: 0 auto;
+  padding: 3rem 3rem;
+  background-color: lightpink;
+}
