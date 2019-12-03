@@ -8,13 +8,9 @@ fetch(url)
       apiResult.map((obj) => {
         const fullName = obj.firstName + " " + obj.lastName;
         const emailAddress = obj.email;
-        // console.log(`${fullName}, has the email address of ${emailAddress}.`);
         const newString = `${fullName}, has the email address of ${emailAddress}.`;
-        const node = document.createElement("li");
-        const textnode = document.createTextNode(newString);
-        node.appendChild(textnode);
-        document.getElementById("myList").appendChild(node);
-        return `${obj.firstName} is my first name.`;
+        var node = document.createElement("li");
+        document.getElementById("myList").append(node, newString);
       }))
     .catch(function(error) {
       console.log(JSON.stringify(error));
